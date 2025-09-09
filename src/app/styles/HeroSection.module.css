@@ -1,0 +1,80 @@
+/* src/styles/HeroSection.module.css */
+
+.heroContainer {
+  display: flex; /* Menggunakan Flexbox untuk menata elemen dalam satu baris */
+  justify-content: center; /* Memusatkan konten secara horizontal */
+  align-items: center; /* Memusatkan konten secara vertikal */
+  padding: 80px 20px; /* Padding atas-bawah, dan samping */
+  min-height: calc(100vh - 60px); /* Contoh: tinggi minimal layar - tinggi header/footer jika ada */
+  gap: 60px; /* Jarak antara gambar dan konten teks */
+  flex-wrap: wrap; /* Agar elemen bisa wrap ke bawah di layar kecil */
+  max-width: 1200px; /* Batasi lebar container */
+  margin: 0 auto; /* Memusatkan container di tengah halaman */
+}
+
+.heroImage {
+  flex-shrink: 0; /* Mencegah gambar menyusut */
+  /* Anda bisa menambahkan styling bayangan atau border di sini jika diinginkan */
+}
+
+.heroContent {
+  max-width: 450px; /* Batasi lebar teks agar tidak terlalu panjang */
+  text-align: left; /* Teks rata kiri */
+}
+
+.heroText {
+  font-family: Arial, sans-serif; /* Ganti dengan font yang Anda inginkan */
+  font-size: 1.2em; /* Ukuran font */
+  line-height: 1.6; /* Jarak antar baris */
+  color: #333; /* Warna teks */
+  margin-bottom: 30px; /* Jarak antara teks dan tombol */
+}
+
+.highlight {
+  font-weight: bold; /* Menarik perhatian pada kata-kata tertentu */
+  /* color: #007bff; */ /* Contoh warna highlight */
+}
+
+.blogButton {
+  background-color: transparent; /* Latar belakang transparan */
+  border: 1px solid #333; /* Border tipis */
+  color: #333; /* Warna teks tombol */
+  padding: 15px 30px; /* Padding tombol */
+  font-size: 1em; /* Ukuran font tombol */
+  font-weight: bold;
+  cursor: pointer; /* Menunjukkan bahwa tombol bisa diklik */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Efek transisi */
+}
+
+.blogButton:hover {
+  background-color: #333; /* Ganti warna latar belakang saat hover */
+  color: #fff; /* Ganti warna teks saat hover */
+}
+
+/* Media Queries untuk Responsivitas */
+@media (max-width: 768px) {
+  .heroContainer {
+    flex-direction: column; /* Tumpuk elemen secara vertikal di layar kecil */
+    text-align: center; /* Pusatkan teks */
+    gap: 40px;
+    padding: 60px 15px;
+  }
+
+  .heroImage {
+    order: -1; /* Pindahkan gambar ke atas jika diperlukan */
+  }
+
+  .heroContent {
+    max-width: 100%; /* Gunakan lebar penuh */
+    text-align: center; /* Pusatkan teks */
+  }
+
+  .heroText {
+    font-size: 1em;
+  }
+
+  .blogButton {
+    padding: 12px 25px;
+    font-size: 0.9em;
+  }
+}
