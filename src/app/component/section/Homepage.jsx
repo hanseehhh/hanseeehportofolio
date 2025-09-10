@@ -4,6 +4,7 @@
 import React from 'react';
 import Image from 'next/image'; 
 import styles from '@/app/styles/HeroSection.module.css';
+
 export default function HeroSection() {
   return (
     <section className={styles.heroContainer}>
