@@ -1,16 +1,15 @@
-// src/app/page.js
-"use client"; // Jika ada interaksi di page.js atau komponen lain yang di-import membutuhkan client-side
+"use client";
 
-import HeroSection from '@/app/component/section/Homepage'; // Import HeroSection
-// import Portfolio from '@/components/sections/Portfolio'; // Jika sudah ada
-// import BlogList from '@/components/sections/BlogList'; // Jika sudah ada
+import Homepage from '@/app/api/section/Homepage';
+import Skills from '@/app/api/section/Skills';
+import Portofolio from '@/app/api/section/Portofolio';
 
-export default function HomePage() {
+export default function Page() {
   return (
-    <main>
-      <HeroSection /> {/* Panggil komponen HeroSection di sini */}
-      {/* <Portfolio /> */}
-      {/* <BlogList /> */}
-    </main>
+    <>
+      <Homepage />
+      <Skills />
+      <Portofolio />
+    </>
   );
 }

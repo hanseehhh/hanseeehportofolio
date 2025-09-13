@@ -1,0 +1,25 @@
+.projects {
+  background: #f9f7f4;
+  padding: 4rem 8rem;
+  text-align: center;
+}
+
+.sectionTitle {
+  font-size: 6rem;
+  font-family: "Georgia", serif;
+  font-weight: 300;
+  color: #002060;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.8rem;
+  color: #444;
+  margin-bottom: 3rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}

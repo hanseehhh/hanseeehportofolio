@@ -1,0 +1,79 @@
+.skills {
+  position: relative;
+  min-height: 100vh;
+  background: #f9f7f4;
+  padding: 5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.centerContent {
+  margin-bottom: 3rem;
+}
+
+.icon {
+  width: 60px;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 6rem;
+  font-family: "Georgia", serif;
+  color: #002060;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.8rem;
+  color: #444;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Floating Skill Tags */
+.skillsContainer {
+  position: relative;
+  width: 100%;
+  max-width: 1500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.skill {
+  background: #cfe2ff;
+  color: #002060;
+  font-weight: 500;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  font-size: 1.5rem;
+  animation: float 6s ease-in-out infinite;
+}
+
+/* variasi animasi */
+.float0 {
+  animation-delay: 0s;
+}
+.float1 {
+  animation-delay: 2s;
+}
+.float2 {
+  animation-delay: 4s;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
