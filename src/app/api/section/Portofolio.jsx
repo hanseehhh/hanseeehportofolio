@@ -47,6 +47,10 @@ export default function Projects() {
           <Card key={i} {...p} />
         ))}
       </div>
+
+      <div className={`${styles.buttonRow} ${styles.fadeIn}`}>
+        <button className={styles.cta}>Lets See More</button>
+      </div>
     </section>
   );
 }
